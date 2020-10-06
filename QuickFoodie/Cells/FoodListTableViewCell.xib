@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FoodListTableViewCell" rowHeight="80" id="KGk-i7-Jjw" customClass="FoodListTableViewCell" customModule="QuickFoodie" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WMA-dv-RDa">
+                        <rect key="frame" x="30" y="10" width="405" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mUg-5o-YaN">
+                                <rect key="frame" x="10" y="0.0" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="QTk-7A-kZC"/>
+                                    <constraint firstAttribute="width" constant="60" id="bgK-s9-dNo"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Portobello Mushroom Burgers" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rLN-vU-oYp">
+                                <rect key="frame" x="86" y="21.5" width="309" height="17.5"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="mUg-5o-YaN" firstAttribute="leading" secondItem="WMA-dv-RDa" secondAttribute="leading" constant="10" id="F4c-sq-PSh"/>
+                            <constraint firstAttribute="trailing" secondItem="rLN-vU-oYp" secondAttribute="trailing" constant="10" id="PZV-yo-zjI"/>
+                            <constraint firstItem="mUg-5o-YaN" firstAttribute="top" secondItem="WMA-dv-RDa" secondAttribute="top" id="YoY-cF-bke"/>
+                            <constraint firstAttribute="bottom" secondItem="mUg-5o-YaN" secondAttribute="bottom" id="iaC-gQ-Fvb"/>
+                            <constraint firstItem="rLN-vU-oYp" firstAttribute="leading" secondItem="mUg-5o-YaN" secondAttribute="trailing" constant="16" id="kTD-ve-0it"/>
+                            <constraint firstItem="rLN-vU-oYp" firstAttribute="centerY" secondItem="WMA-dv-RDa" secondAttribute="centerY" id="pnS-uE-Yb4"/>
+                        </constraints>
+                    </view>
+                    <view alpha="0.10000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zLN-rl-NTU">
+                        <rect key="frame" x="20" y="79" width="415" height="1"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="jux-5t-02W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="WMA-dv-RDa" secondAttribute="bottom" constant="10" id="1am-iM-kwL"/>
+                    <constraint firstAttribute="trailing" secondItem="WMA-dv-RDa" secondAttribute="trailing" constant="20" id="DPA-e1-UEW"/>
+                    <constraint firstItem="WMA-dv-RDa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="O6Z-hK-gBY"/>
+                    <constraint firstItem="zLN-rl-NTU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="Shr-vp-veZ"/>
+                    <constraint firstAttribute="trailing" secondItem="zLN-rl-NTU" secondAttribute="trailing" constant="20" symbolic="YES" id="T7i-6c-xQJ"/>
+                    <constraint firstAttribute="bottom" secondItem="zLN-rl-NTU" secondAttribute="bottom" id="Ue7-uA-NHl"/>
+                    <constraint firstItem="WMA-dv-RDa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="n8h-7c-AIP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="containerView" destination="WMA-dv-RDa" id="b75-GC-UZm"/>
+                <outlet property="foodImage" destination="mUg-5o-YaN" id="WnE-hu-0ke"/>
+                <outlet property="foodName" destination="rLN-vU-oYp" id="Toe-XT-TBD"/>
+            </connections>
+            <point key="canvasLocation" x="93.478260869565219" y="131.25"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ogu-mS-dkb">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--QuickFoodie-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="FoodCategoryViewController" id="BYZ-38-t0r" customClass="FoodCategoryViewController" customModule="QuickFoodie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bfG-yr-RvB">
+                                <rect key="frame" x="0.0" y="144.5" width="414" height="717.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Food Category" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IGX-4P-9W7">
+                                <rect key="frame" x="20" y="108" width="133" height="26.5"/>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoSCITCTT-Book" family="Bodoni 72 Smallcaps" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bfG-yr-RvB" secondAttribute="trailing" id="bg9-8Y-d1P"/>
+                            <constraint firstItem="IGX-4P-9W7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="dsm-qV-xfp"/>
+                            <constraint firstItem="IGX-4P-9W7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="pVB-1u-NMG"/>
+                            <constraint firstItem="bfG-yr-RvB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qEq-Ac-V29"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bfG-yr-RvB" secondAttribute="bottom" id="rsp-xg-UT5"/>
+                            <constraint firstItem="bfG-yr-RvB" firstAttribute="top" secondItem="IGX-4P-9W7" secondAttribute="bottom" constant="10" id="vsp-Uv-oif"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QuickFoodie" id="y95-gf-epM"/>
+                    <connections>
+                        <outlet property="foodCategoryTableview" destination="bfG-yr-RvB" id="WYw-II-9aP"/>
+                        <segue destination="b9R-BO-GpT" kind="show" id="86Q-cz-sZU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="922" y="116"/>
+        </scene>
+        <!--QuickFoodie-->
+        <scene sceneID="0Dg-60-E4M">
+            <objects>
+                <viewController storyboardIdentifier="ProductDetailsViewController" id="b9R-BO-GpT" customClass="ProductDetailsViewController" customModule="QuickFoodie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FY5-Uw-bzO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EL9-9L-dLM">
+                                <rect key="frame" x="30" y="786" width="354" height="46"/>
+                                <color key="backgroundColor" red="0.22742760179999999" green="0.22746592760000001" blue="0.2274192572" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="1kn-12-0zj"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="22"/>
+                                <state key="normal" title="Click">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="buyAction:" destination="b9R-BO-GpT" eventType="touchUpInside" id="Cge-Bm-Zfj"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cyP-Bs-suw">
+                                <rect key="frame" x="30" y="118" width="354" height="269"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f3k-iL-xaV">
+                                <rect key="frame" x="30" y="407" width="354" height="22"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="osH-qn-fph">
+                                <rect key="frame" x="30" y="439" width="354" height="327"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </string>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="EuphemiaUCAS-Italic" family="Euphemia UCAS" pointSize="15"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="jFl-2D-HCa" firstAttribute="bottom" secondItem="EL9-9L-dLM" secondAttribute="bottom" constant="30" id="20C-Z9-NhB"/>
+                            <constraint firstItem="jFl-2D-HCa" firstAttribute="trailing" secondItem="cyP-Bs-suw" secondAttribute="trailing" constant="30" id="2DN-7D-oaf"/>
+                            <constraint firstItem="f3k-iL-xaV" firstAttribute="top" secondItem="cyP-Bs-suw" secondAttribute="bottom" constant="20" id="4uZ-TD-uSm"/>
+                            <constraint firstItem="EL9-9L-dLM" firstAttribute="top" secondItem="osH-qn-fph" secondAttribute="bottom" constant="20" id="7S4-5T-RNR"/>
+                            <constraint firstItem="cyP-Bs-suw" firstAttribute="top" secondItem="jFl-2D-HCa" secondAttribute="top" constant="30" id="AkY-V7-RsV"/>
+                            <constraint firstItem="cyP-Bs-suw" firstAttribute="leading" secondItem="jFl-2D-HCa" secondAttribute="leading" constant="30" id="ScH-vi-Ktp"/>
+                            <constraint firstItem="osH-qn-fph" firstAttribute="leading" secondItem="jFl-2D-HCa" secondAttribute="leading" constant="30" id="Th2-Jr-GLh"/>
+                            <constraint firstItem="EL9-9L-dLM" firstAttribute="leading" secondItem="jFl-2D-HCa" secondAttribute="leading" constant="30" id="YnD-V4-B3O"/>
+                            <constraint firstItem="jFl-2D-HCa" firstAttribute="trailing" secondItem="f3k-iL-xaV" secondAttribute="trailing" constant="30" id="aUl-dt-Yd1"/>
+                            <constraint firstItem="osH-qn-fph" firstAttribute="top" secondItem="f3k-iL-xaV" secondAttribute="bottom" constant="10" id="eUv-Fw-vJi"/>
+                            <constraint firstItem="jFl-2D-HCa" firstAttribute="trailing" secondItem="osH-qn-fph" secondAttribute="trailing" constant="30" id="ecc-ZT-5b2"/>
+                            <constraint firstItem="cyP-Bs-suw" firstAttribute="height" secondItem="FY5-Uw-bzO" secondAttribute="height" multiplier="0.3" id="kkU-mI-u2f"/>
+                            <constraint firstItem="cyP-Bs-suw" firstAttribute="centerX" secondItem="FY5-Uw-bzO" secondAttribute="centerX" id="p9h-wP-RsV"/>
+                            <constraint firstItem="f3k-iL-xaV" firstAttribute="leading" secondItem="jFl-2D-HCa" secondAttribute="leading" constant="30" id="tSP-pR-HiX"/>
+                            <constraint firstItem="jFl-2D-HCa" firstAttribute="trailing" secondItem="EL9-9L-dLM" secondAttribute="trailing" constant="30" id="w4c-kp-Zw2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jFl-2D-HCa"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="QuickFoodie" id="SFK-Lf-geY">
+                        <barButtonItem key="leftBarButtonItem" style="plain" id="bfl-rh-969">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="hXi-kx-DCe">
+                                <rect key="frame" x="20" y="0.0" width="64" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backButton"/>
+                                <connections>
+                                    <action selector="backAction:" destination="b9R-BO-GpT" eventType="touchUpInside" id="e2G-xG-60c"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="buyButton" destination="EL9-9L-dLM" id="Ad7-jH-IId"/>
+                        <outlet property="productDescription" destination="osH-qn-fph" id="7bk-Ku-GLG"/>
+                        <outlet property="productImage" destination="cyP-Bs-suw" id="EN1-Sj-5O7"/>
+                        <outlet property="productName" destination="f3k-iL-xaV" id="3QP-qm-DUa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PvC-5c-twY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692.753623188406" y="115.84821428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WV4-va-nwi">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ogu-mS-dkb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Wid-2F-YW9">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TTX-gx-BUL"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oa7-qW-iSs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="115.84821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="backButton" width="20" height="20"/>
+    </resources>
+</document>
